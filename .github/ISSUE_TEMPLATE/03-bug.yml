@@ -1,0 +1,37 @@
+name: 🐞 버그
+description: 개발 도중 버그가 발생했나요?
+labels: ["🐞 Bug"]
+projects: ["GU-99/5"]
+body:
+  - type: textarea
+    attributes:
+      label: 🐞 설명
+      description: "버그에 대한 설명을 작성해 주세요."
+      placeholder: "예: 드래그 앤 드롭 후 결과를 서버에 저장하고 로컬에 재반영하는 사이에 화면 반짝임이 발생하는 문제"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📄 버그 로그
+      description: "로그가 있으면 복붙해 주세요."
+      placeholder: "로그를 여기에 붙여넣어 주세요."
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 🌏 버그 발생 환경
+      description: "버그가 발생한 환경에 대한 정보를 제공해주세요. 운영체제, 개발 도구, 브라우저, 브라우저 버전 등을 포함해주세요."
+      placeholder: "예: Windows 10, VSCode, Chrome 89, Node.js 18.18, NextJS 15.2"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 🔗 참고 자료
+      description: "작업과 관련해서 참고할 만한 자료나 링크가 있다면 제공해주세요."
+      placeholder: "참고할 자료나 링크를 입력해주세요."
+    validations:
+      required: false
