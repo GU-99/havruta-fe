@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "oderwat.indent-rainbow",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "steoates.autoimport",
+    "formulahendry.auto-rename-tag",
+    "pkief.material-icon-theme",
+    "wix.vscode-import-cost",
+    "streetsidesoftware.code-spell-checker",
+    "simonsiefke.svg-preview",
+    "crystal-spider.jsdoc-generator",
+    "bierner.jsdoc-markdown-highlighting",
+    "firsttris.vscode-jest-runner"
+  ]
+}
