@@ -7,11 +7,11 @@ import type { ReactNode } from 'react'
 export type CentralStoreApi = ReturnType<typeof createCentralStore>
 export const CentralStoreContext = createContext<CentralStoreApi | null>(null);
 
-type StoreProviderProps = {
+type CentralStoreProviderProps = {
   children: ReactNode;
 };
 
-export default function CentralStoreProvider({ children }: StoreProviderProps) {
+export default function CentralStoreProvider({ children }: CentralStoreProviderProps) {
   const storeRef = useRef<CentralStoreApi | null>(null);
 
   if (storeRef.current === null) {
