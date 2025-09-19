@@ -1,7 +1,7 @@
 import { StateCreator } from 'zustand';
-import { CentralStore } from '@/stores/centralStore';
 
 import type { User } from '@/types/userType';
+import type { CentralStore } from '@/stores/centralStore';
 
 // ToDo: 초기 뼈대만 작성, 이후 필요한 정보에 맞춰 커스텀 필요.
 export type UserState = {
