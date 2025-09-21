@@ -31,7 +31,7 @@ export const ProfileCard = () => {
                 {/* 프로필 사진 + 버튼 */}
                 <div className="flex flex-row h-[220px] gap-[20px] bg-white
                 rounded-[20px] text-[15px] items-center">
-                    <div className="size-[220px] relative overflow-hidden rounded-[20px]">
+                    <div className="size-[220px] relative overflow-hidden rounded-[20px] mx-auto md:mx-0">
                         <Image
                             src={profileImg}
                             alt="프로필 사진"
@@ -41,7 +41,7 @@ export const ProfileCard = () => {
                     </div>
 
 
-                    <div className="flex flex-col gap-[10px]">
+                    <div className="hidden md:flex flex-col gap-[10px]">
                         <div className="flex flex-row gap-[10px]">
                             <button
                                 className="bg-[#F5F5F5] rounded-[20px] px-[22px] py-[8px]"
@@ -74,13 +74,14 @@ export const ProfileCard = () => {
                         <button className="bg-[#F5F5F5] rounded-[16px] px-[10px] py-[4px] text-[16px]"
                             onClick={handleEditProfile}>수정</button>
                     </div>
-                    <div className="flex flex-row gap-[30px]">
-                        <div className="flex flex-col gap-[10px]">
-                            <p className="text-[#E1E1E4]">이메일</p>
+                    {/* 모바일: 세로 / 데스크탑: 가로 */}
+                    <div className="flex flex-col md:flex-row gap-[20px] md:gap-[30px]">
+                        <div className="flex flex-col gap-[6px]">
+                            <p className="text-[#A1A1A4] text-sm">이메일</p>
                             <p>havruta@naver.com</p>
                         </div>
-                        <div className="flex flex-col gap-[10px]">
-                            <p className="text-[#E1E1E4]">닉네임</p>
+                        <div className="flex flex-col gap-[6px]">
+                            <p className="text-[#A1A1A4] text-sm">닉네임</p>
                             <p>하브루타</p>
                         </div>
                     </div>
