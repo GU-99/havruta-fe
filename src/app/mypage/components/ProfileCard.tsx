@@ -27,7 +27,7 @@ export const ProfileCard = () => {
                 나의 프로필
             </div>
 
-            <div className="flex flex-col h-[656px] p-[12px] gap-[20px] bg-[#F7F7FA] rounded-[20px] border-1 border-[#E1E1E4]">
+            <div className="flex flex-col p-[12px] gap-[20px] bg-[#F7F7FA] rounded-[20px] border-1 border-[#E1E1E4]">
                 {/* 프로필 사진 + 버튼 */}
                 <div className="flex flex-row h-[220px] gap-[20px] bg-white
                 rounded-[20px] text-[15px] items-center">
@@ -39,7 +39,6 @@ export const ProfileCard = () => {
                             className="object-cover"
                         />
                     </div>
-
 
                     <div className="hidden md:flex flex-col gap-[10px]">
                         <div className="flex flex-row gap-[10px]">
@@ -74,7 +73,6 @@ export const ProfileCard = () => {
                         <button className="bg-[#F5F5F5] rounded-[16px] px-[10px] py-[4px] text-[16px]"
                             onClick={handleEditProfile}>수정</button>
                     </div>
-                    {/* 모바일: 세로 / 데스크탑: 가로 */}
                     <div className="flex flex-col md:flex-row gap-[20px] md:gap-[30px]">
                         <div className="flex flex-col gap-[6px]">
                             <p className="text-[#A1A1A4] text-sm">이메일</p>
