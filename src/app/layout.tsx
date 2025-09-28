@@ -33,7 +33,7 @@ export default function RootLayout({
         <CentralStoreProvider>
           <ClientProvider>
             <Header />
-            {children}
+            <main className="mt-10">{children}</main>
           </ClientProvider>
         </CentralStoreProvider>
       </body>
