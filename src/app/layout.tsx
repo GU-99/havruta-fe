@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import ClientProvider from '@/config/react-query/ClientProvider';
 import CentralStoreProvider from '@/config/zustand/CentralStoreProvider';
+import { Header } from "@/components/common/Header";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,7 +32,8 @@ export default function RootLayout({
       >
         <CentralStoreProvider>
           <ClientProvider>
-            {children}
+            <Header />
+            <main className="mt-10">{children}</main>
           </ClientProvider>
         </CentralStoreProvider>
       </body>
