@@ -58,28 +58,28 @@ export const DeckSection = ({ title, icon, decks, onSeeAll }: DeckSectionProps) 
     };
 
     return (
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-[10px]">
             {/* 헤더 */}
-            <div className="flex flex-row h-16 md:h-20 max-w-screen-xl p-2 md:p-4 gap-5 bg-[#F7F7FA] rounded-[20px] border border-[#E1E1E4] items-center">
-                <div className="flex items-center gap-2">
-                    <div className="flex bg-white w-10 h-10 md:w-12 md:h-12 rounded-[16px] p-2 border border-[#E1E1E4] items-center justify-center">
+            <div className="flex flex-row h-[64px] md:h-[80px] max-w-screen-xl p-[8px] md:p-[16px] gap-[20px] bg-[#F7F7FA] rounded-[20px] border border-[#E1E1E4] items-center">
+                <div className="flex items-center gap-[8px]">
+                    <div className="flex bg-white w-[40px] h-[40px] md:w-[48px] md:h-[48px] rounded-[16px] p-[8px] border border-[#E1E1E4] items-center justify-center">
                         {icon}
                     </div>
-                    <h3 className="font-bold text-sm md:text-[18px]">{title}</h3>
+                    <h3 className="font-bold text-[14px] md:text-[18px]">{title}</h3>
                 </div>
                 <button
                     onClick={handleSeeAll}
-                    className="text-xs px-[14px] md:text-sm text-[#555558] ml-auto gap-[6px]"
+                    className="text-[12px] px-[14px] md:text-[14px] text-[#555558] ml-auto gap-[6px]"
                 >
                     모든 덱 보기 →
                 </button>
             </div>
 
             {/* 덱 카드 목록 */}
-            <div className="flex flex-col gap-[16px] rounded-[20px]">
+            <div className="flex flex-col gap-[20px] rounded-[20px]">
                 <div
                     ref={scrollContainerRef}
-                    className={`flex gap-4 overflow-x-auto pb-2 scrollbar-hide ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+                    className={`flex gap-[16px] overflow-x-auto pb-[8px] scrollbar-hide ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
                     onWheel={(e) => {
                         e.preventDefault();
                         const container = e.currentTarget;

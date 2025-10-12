@@ -120,7 +120,7 @@ export const UserDeckSections = () => {
     };
 
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-[32px]">
             <DeckSection
                 title="좋아요 누른 덱"
                 icon={<LikedDecksIcon />}
